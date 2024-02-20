@@ -8,6 +8,7 @@
 body {
   font-size: 1.2 rem;
   font-family: "Work Sans", sans-serif;
+  min-height: 3000px;
 }
 
 .hero {
@@ -28,6 +29,8 @@ body {
   height: 100%;
   background-image: url(img/alvin-mahmudov-qJnsHa8DWyY-unsplash.jpg);
   z-index: -1;
+  background-size: cover;
+  background-position: center;
   filter: grayscale();
 }
 
@@ -58,7 +61,109 @@ body {
   font-family: "Sacramento", cursive;
 }
 
+/* Icons */
+.material-icons {
+  font-size: 55px; /* Adjust the size as needed */
+}
+
+.navbar .container .navbar-brand i {
+  font-size: 15px;
+}
+
+.mynavbar {
+}
+
+.mynavbar .navbar-brand,
+.mynavbar .offcanvas-title {
+  font-family: "Sacramento", cursive;
+  font-size: 2.1rem;
+}
+
+.mynavbar .nav-link {
+  font-weight: 600;
+}
+
+.home {
+  background-image: url(img/images.png);
+  min-height: 50vh;
+  margin-top: -4.8rem;
+  padding-top: 15rem;
+  padding-bottom: 5rem;
+}
+
+.home h2 {
+  font-family: "Sacramento", cursive;
+  font-size: 5rem;
+  color: var(--pink);
+}
+.home h3 {
+  color: #444;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.home .couple {
+  margin-top: 100px;
+}
+
+.home .couple h3 {
+  font-family: "sacramento";
+  font-size: 2.4rem;
+  color: var(--pink);
+}
+
+.home .couple img {
+  width: 100%;
+}
+
+.info {
+  background-color: var(--pink);
+  color: white;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.info h2 {
+  font-family: "sacramento";
+  font-size: 4rem;
+  color: black;
+}
+
+.info p,
+.info a {
+  color: black;
+  font-style: italic;
+}
+
+.info .card {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.card-footer {
+  font-style: italic;
+  font-size: 0.9rem;
+}
+/* .home .heart {
+  width: 50px;
+  height: 50px;
+  background-color: var(--pink);
+  display: flex;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(-60%);
+}
+
+.home .heart i {
+  margin: auto;
+  color: black;
+} */
 /* Media Query */
+
+/* Extra Large */
+
+@media (max-width: 1200px) {
+}
 /* Laptop */
 @media (max-width: 992px) {
   html {
@@ -66,6 +171,13 @@ body {
   }
   .simply-countdown > .simply-section {
     padding: 70px;
+  }
+  .material-icons {
+    font-size: 45px; /* Adjust the size as needed */
+  }
+
+  .navbar .container .navbar-brand i {
+    font-size: 10px;
   }
 }
 
@@ -78,16 +190,41 @@ body {
     padding: 60px;
     margin: 5px;
   }
+  .material-icons {
+    font-size: 30px; /* Adjust the size as needed */
+  }
+
+  .navbar .container .navbar-brand i {
+    font-size: 8px;
+  }
+
+  .mynavbar .nav-link {
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
+  }
 }
 
 /* Mobile */
 
 @media (max-width: 576px) {
   html {
-    font-size: 60%;
+    font-size: 50%;
   }
   .simply-countdown > .simply-section {
     padding: 35px;
     margin: 3px;
+  }
+  .material-icons {
+    font-size: 20px; /* Adjust the size as needed */
+  }
+
+  .navbar .container .navbar-brand i {
+    font-size: 4px;
+  }
+  .mynavbar .nav-link {
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
   }
 }
